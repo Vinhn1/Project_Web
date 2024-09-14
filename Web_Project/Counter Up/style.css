@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: #8a66b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.box{
+    background: #6b38b6;
+    padding: 20px 40px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    margin: 30px;
+}
+
+.box p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}

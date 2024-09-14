@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+}
+
+#home {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  background: linear-gradient(to right, #4daf54, #3d8880);
+  color: #fff;
+  padding: 200px 100px;
+}
+
+#home h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+#home .description {
+  font-size: 20px;
+  width: 700px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: #242628;
+  width: 500px;
+  color: #fff;
+  padding: 20px;
+  margin: 40px 20px;
+  height: 200px;
+  border-radius: 10px;
+   overflow-y: hidden;
+}
+
+.box .title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#team {
+  background: linear-gradient(180deg, #017c2c 50%, #fff 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.member .name {
+  color: #017c2c;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.left-to-right {
+  transform: translateX(-200%);
+  transition: 1s;
+}
+
+.left-to-right.start {
+  transform: translateX(0);
+}
+
+.right-to-left {
+  transform: translateX(200%);
+  transition: 1s;
+}
+
+.right-to-left.start {
+  transform: translateX(0);
+}
+
+/*hieu ung Thu nho & phong to ra */
+.zoom {
+  transform: scale(0);
+  transition: 1s;
+}
+
+.zoom.start {
+  transform: scale(1);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="tool">
+      <input id="color" type="color" />
+      <button id="eraser">
+        <i class="bx bx-eraser"></i>
+      </button>
+      <button id="decrease">
+        <span>-</span>
+      </button>
+      <button id="size">
+        <span>10</span>
+      </button>
+      <button id="increase">
+        <span>+</span>
+      </button>
+      <a id="save" download = "tenfile.png">
+        <i class="bx bx-save"></i>
+      </a>
+      <button id="clear">
+        <i class='bx bx-x-circle'></i>
+      </button>
+    </div>
+
+    <div class="container">
+      <canvas width="600" height="600"></canvas>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

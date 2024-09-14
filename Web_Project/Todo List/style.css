@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to right, #ffe000, #799f0c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.title{
+    font-size: 22px;
+}
+
+.content{
+    border: 1px solid #888;
+    padding: 10px;
+    display: flex;
+    /* Cho phép các item xuống hàng nếu không đủ không gian 1 dòng duy nhất trong container */
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.content li{
+    background: green;
+    color: white;
+    border-radius: 3px;
+    list-style: none;
+    margin: 4px 3px;
+    padding: 10px;
+}
+
+.content li i{
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.content input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    flex-grow: 1; /* Để input chiếm không gian còn lại của phần tử .content */
+    min-width: 0; /* Đảm bảo input không mở rộng quá kích thước .content */
+    margin: 10px;
+}
+
+.remove_all{
+    background: #8cc84c;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.remove_all:hover{
+    background: #799f0c;
+}
